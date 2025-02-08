@@ -1,0 +1,332 @@
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 50);
+}
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: initial;
+}
+
+header nav ul li {
+    background-color: #333;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header nav a {
+    color: #28e2e2;
+    text-decoration: none;
+}
+
+/* Hero Styles */
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/travel.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0.625rem;
+ }
+
+.hero img {
+    /* width: auto;
+    height: auto; */
+    object-fit: cover;
+}
+
+/* The hero image */
+.hero-image::before {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background: url(../images/travel.jpeg);
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+.image-div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-1{
+    width: 800px;
+    height: 400px;
+    /* object-fit: cover; */
+}
+
+.image-2{
+    width: 800px;
+    height: 400px;
+    /* object-fit: cover; */
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+
+/* Footer Styles */
+
+p{
+    font-size: large;
+    align-items: left;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 614px;
+}
+
+.footer-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content ul li {
+    font-weight: bold;
+    font-size: large;
+    margin-right: 20px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* Blog page css */
+.parent{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.child {
+    /* display: flex;
+    justify-content: center; */
+    background-color: rgb(218, 255, 234);
+    /* justify-content: space-between; */
+    border: 3px solid rgb(113, 113, 141);
+    border-radius: 20px;
+    width: 80;
+    overflow: hidden;
+    transition: all 0.4s;
+    box-shadow: 0 2.4rem 4.8rem rgba(55, 189, 88, 0.075);
+}
+
+.child:hover{
+    transform: translateY(-0.8rem);
+    box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.child ul {
+    list-style: none;
+    padding: 0;
+}
+
+.child button {
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px 10px 15px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: #e4e4e4;
+    outline-offset: 4px;
+    font-size: 18px;
+    /* transform: translateY(-6px); */
+}
+
+.child li {
+    color: rgb(0, 146, 204);
+    margin: 20px;
+}
+
+.child li h2 {
+    margin-top: 2px;
+    font-size: 32px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.child li p {
+    font-size: 20px;
+    font-style: italic;
+    color: #cfa900;
+}
+
+.child li img{
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+/* Author Profiles Styles */
+
+.about-intro {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.meet-authors {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.author-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.author-profile {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.author-profile h2 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #0077b6;
+}
+
+.author-profile p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Contact Page CSS */
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e4cccc;
+}
+
+input:focus {
+    color: #cfa900;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+form {
+    margin-top: 20px;
+}
