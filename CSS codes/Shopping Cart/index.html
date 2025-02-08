@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="../images/product1.jpeg" alt="Product 1" class="product-image"></td>
+                    <td style="font-weight: bold;">Attack Drone with Camera</td>
+                    <td>
+                        <select class="quantity-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>$10.99</td>
+                    <td class="total-price">$10.99</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/product2.jpeg" alt="Product 2" class="product-image"></td>
+                    <td style="font-weight: bold;">Cruise Ship</td>
+                    <td>
+                        <select class="quantity-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>$9.99</td>
+                    <td class="total-price">$9.99</td>
+                </tr>
+                <tr>
+                    <td><img src="../images/product3.jpeg" alt="Product 3" class="product-image"></td>
+                    <td style="font-weight: bold;">Automatic Machine Gun</td>
+                    <td>
+                        <select class="quantity-select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td>$12.99</td>
+                    <td class="total-price">$12.99</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Subtotal:</td>
+                    <td id="subtotal">$33.97</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Tax (8%):</td>
+                    <td id="tax">$2.71</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Total:</td>
+                    <td id="total">$36.68</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
